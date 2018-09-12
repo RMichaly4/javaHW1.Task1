@@ -3,7 +3,7 @@ import java.io.*;
 public class Main {
 
     // specify file to read from below
-    static String FILE = "C:\\=DATA\\#WORK\\TestScripts\\javaHW1.Task1.v02\\src\\Logs.txt";
+    static String FILE = "C:\\=DATA\\#WORK\\IDEA projects\\javaHW1.Task1.v02\\src\\Logs.txt";
 
     // specify string to find below
     static String STRING_TO_FIND = "ERROR";
@@ -16,7 +16,7 @@ public class Main {
             FileInputStream fstream = new FileInputStream(FILE);
             BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
             // specify file to write to below
-            FileWriter writer = new FileWriter("C:\\=DATA\\#WORK\\TestScripts\\javaHW1.Task1.v02\\src\\errorLogs.txt", true);
+            FileWriter writer = new FileWriter("C:\\=DATA\\#WORK\\IDEA projects\\javaHW1.Task1.v02\\src\\errorLogs.txt", false);
         int lineNum = 0;
         int matchCount = 0;
         String strLine;

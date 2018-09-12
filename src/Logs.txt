@@ -1,0 +1,1625 @@
+
+Projects ChangesAgents42Build Queue0
+Roman Krivosheyev  
+Run...
+Actions 
+EcoOCASHserverdevelopRun Sonar Analysis
+#114 (12 Sep 18 01:00) 
+On Duty:   Kristaps Mizga   &   Kaspars Kurms
+Overview
+
+Changes7
+
+Build Log
+
+Parameters
+
+Artifacts
+
+PerfMon
+
+Maven Build Info
+
+«  #113	 	All history	 	
+Last recorded build
+
+Download full build log (~223.19 KB)	|	.zip	|	raw message fileTree view | Tail
+  Repeat block names   View:     Console view
+[00:59:46]TeamCity server version is 2017.2.3 (build 51047)
+[01:00:12]The build is removed from the queue to be prepared for the start
+[01:00:12]Collecting changes in 2 VCS roots
+[01:00:12][Collecting changes in 2 VCS roots] VCS Root details
+[01:00:12][VCS Root details] "TeamCity_Build_Configurations (Do not touch)" {instance id=9344, parent internal id=132, parent id=TeamCityBuildConfigurations, description: "https://git.ctco.lv/scm/cscm-teamcity/cscm-teamcity-versioned-settings.git#refs/heads/master"}
+[01:00:12][VCS Root details] "GIT.CTCO.LV" {instance id=8312, parent internal id=18, parent id=Edev_GitCtcoLv, description: "https://git.ctco.lv/scm/ocash/empty.git#refs/heads/develop"}
+[01:00:12][Collecting changes in 2 VCS roots] Detecting changes in VCS root 'GIT.CTCO.LV' (used in 'Post Submit Build', 'Run Sonar Analysis' and 1 other configuration)
+[01:00:12][Collecting changes in 2 VCS roots] Will collect changes for 'GIT.CTCO.LV' starting from revision cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05
+[01:00:13][Collecting changes in 2 VCS roots] Detecting changes in VCS root 'TeamCity_Build_Configurations (Do not touch)' (used in 'AWS Profiled Artifacts', 'Acceptance Tests' and 2553 other configurations)
+[01:00:13][Collecting changes in 2 VCS roots] Will collect changes for 'TeamCity_Build_Configurations (Do not touch)' starting from revision 7691558bafd5e68a7578887bffb5a2be7ceecb7c
+[01:00:13][Collecting changes in 2 VCS roots] Compute revision for 'TeamCity_Build_Configurations (Do not touch)'
+[01:00:13][Compute revision for 'TeamCity_Build_Configurations (Do not touch)'] Upper limit revision: 7691558bafd5e68a7578887bffb5a2be7ceecb7c
+[00:59:47][Compute revision for 'TeamCity_Build_Configurations (Do not touch)'] MaxModId = 745771
+[01:00:13][Compute revision for 'TeamCity_Build_Configurations (Do not touch)'] Latest commit attached to build configuration: 25a52e918a913aafcde3d9b873066ffb6e9b703e
+[01:00:13][Compute revision for 'TeamCity_Build_Configurations (Do not touch)'] Computed revision: 25a52e918a913aafcde3d9b873066ffb6e9b703e
+[01:00:13][Collecting changes in 2 VCS roots] Compute revision for 'GIT.CTCO.LV'
+[01:00:13][Compute revision for 'GIT.CTCO.LV'] Upper limit revision: cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05
+[00:59:47][Compute revision for 'GIT.CTCO.LV'] MaxModId = 745771
+[01:00:13][Compute revision for 'GIT.CTCO.LV'] Latest commit attached to build configuration: cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05
+[01:00:13][Compute revision for 'GIT.CTCO.LV'] Computed revision: cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05
+[01:00:13]Starting the build on the agent ct-vm-v-215029
+[01:00:13]Agent time zone: Europe/Riga
+[01:00:13]Agent is running under JRE: 1.8.0_162-b12
+[01:00:13]Performance monitor is using command line: [perl, /opt/teamcity/system/perfmon/scripts/vmstatlinux.pl, /opt/teamcity/system/perfmon/temp/perfmon.csv, 1000]
+[01:00:13]Starting performance monitoring process
+[01:00:13]Performance monitoring process started
+[01:00:13]Swabra (49s)
+[01:00:13][Swabra] Scanning directory /opt/teamcity/work/eca6f4a6c7dc0942 for newly created, modified and deleted files comparing with snapshot fd23b983.snapshot, paths to monitor are /opt/teamcity/work/eca6f4a6c7dc0942, -:/opt/teamcity/work/eca6f4a6c7dc0942/**/.git and 7 more paths
+[01:01:03][Swabra] Detected 6780 unchanged, 29 newly created (29 of them deleted), 0 modified, 0 deleted files and directories
+[01:01:03]Clearing temporary directory: /opt/teamcity/temp/buildTmp
+[01:01:03]Publishing internal artifacts (2s)
+[01:01:06][Publishing internal artifacts] Publishing 1 file using [ArtifactsCachePublisher]
+[01:01:06][Publishing internal artifacts] Publishing 1 file using [WebPublisher]
+[01:01:03]Using vcs information from agent file: eca6f4a6c7dc0942.xml
+[01:01:03]Checkout directory: /opt/teamcity/work/eca6f4a6c7dc0942
+[01:01:03]Updating sources: agent side checkout (1s)
+[01:01:03][Updating sources] VCS Root: GIT.CTCO.LV (1s)
+[01:01:03][VCS Root: GIT.CTCO.LV] revision: cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05
+[01:01:03][VCS Root: GIT.CTCO.LV] Git version: 2.14.1.0
+[01:01:03][VCS Root: GIT.CTCO.LV] Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942) (1s)
+[01:01:03][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git config core.sparseCheckout true
+[01:01:03][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git show-ref
+[01:01:03][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass8572074343304574951 -c credential.helper= ls-remote origin
+[01:01:03][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git show-ref refs/remotes/origin/develop
+[01:01:03][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] Commit 'cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05' is not found in local clone. Running 'git fetch'...
+[01:01:03][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Counting objects: 49, done.        
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:   2% (1/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:   5% (2/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:   8% (3/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  11% (4/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  14% (5/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  17% (6/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  20% (7/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  23% (8/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  26% (9/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  29% (10/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  32% (11/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  35% (12/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  38% (13/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  41% (14/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  44% (15/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  47% (16/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  50% (17/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  52% (18/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  55% (19/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  58% (20/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  61% (21/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  64% (22/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  67% (23/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  70% (24/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  73% (25/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  76% (26/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  79% (27/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  82% (28/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  85% (29/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  88% (30/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  91% (31/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  94% (32/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects:  97% (33/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects: 100% (34/34)           
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Compressing objects: 100% (34/34), done.        
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] remote: Total 49 (delta 20), reused 1 (delta 0)        
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop] From https://git.ctco.lv/scm/ocash/empty
+[01:01:04][/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass6510019615114310211 -c credential.helper= fetch --progress origin +refs/heads/develop:refs/remotes/origin/develop]    a62d61a09..cdd4b5d31  develop    -> origin/develop
+[01:01:04][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git log -n1 --pretty=format:%H%x20%s cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05 --
+[01:01:05][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git branch
+[01:01:05][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass7477279835619323942 -c credential.helper= -c credential.helper=/opt/teamcity/temp/buildTmp/credHelper4509881058738700941.sh reset --hard cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05
+[01:01:05][Update checkout directory (/opt/teamcity/work/eca6f4a6c7dc0942)] /usr/bin/git branch --set-upstream-to=refs/remotes/origin/develop
+[01:01:05]Swabra
+[01:01:05][Swabra] Saving /opt/teamcity/work/eca6f4a6c7dc0942 directory state to snapshot file fd23b983.snapshot
+[01:01:05]Step 1/5: Get project info (Maven) (3s)
+[01:01:05][Step 1/5] Using predefined Maven user settings: settings.xml
+[01:01:05][Step 1/5] Initial M2_HOME not set
+[01:01:05][Step 1/5] Current M2_HOME = /opt/teamcity/tools/maven3_2
+[01:01:05][Step 1/5] PATH = /opt/teamcity/tools/maven3_2/bin:/opt/jdk1.8.0_162/bin:/opt/node/bin:/opt/p4/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+[01:01:05][Step 1/5] Using watcher: /opt/teamcity/plugins/mavenPlugin/maven-watcher/maven-watcher-agent.jar
+[01:01:05][Step 1/5] Initial MAVEN_OPTS not set
+[01:01:05][Step 1/5] Current MAVEN_OPTS not set
+[01:01:05][Step 1/5] Starting: /opt/jdk1.8.0_162/bin/java -Dagent.home.dir=/opt/teamcity -Dagent.name=ct-vm-v-215029 -Dagent.ownPort=9090 -Dagent.work.dir=/opt/teamcity/work -Dbuild.number=114 -Dbuild.vcs.number=cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05 -Dbuild.vcs.number.1=cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05 -Dbuild.vcs.number.Edev_GitCtcoLv=cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05 -Dclassworlds.conf=/opt/teamcity/temp/buildTmp/teamcity.m2.conf -Dcom.jetbrains.maven.watcher.report.file=/opt/teamcity/temp/buildTmp/maven-build-info.xml -Djava.io.tmpdir=/opt/teamcity/temp/buildTmp -Dmaven.home=/opt/teamcity/tools/maven3_2 -Dmaven.multiModuleProjectDirectory=/opt/teamcity/work/eca6f4a6c7dc0942 -Dmaven.repo.local=/home/teamcity/.m2/repository -Dteamcity.agent.cpuBenchmark=632 -Dteamcity.agent.dotnet.agent_url=http://localhost:9090/RPC2 -Dteamcity.agent.dotnet.build_id=4230624 -Dteamcity.auth.password=******* -Dteamcity.auth.userId=TeamCityBuildId=4230624 -Dteamcity.build.changedFiles.file=/opt/teamcity/temp/buildTmp/changedFiles6223309963822358815.txt -Dteamcity.build.checkoutDir=/opt/teamcity/work/eca6f4a6c7dc0942 -Dteamcity.build.id=4230624 -Dteamcity.build.properties.file=/opt/teamcity/temp/buildTmp/teamcity.build5792220674171395811.properties -Dteamcity.build.tempDir=/opt/teamcity/temp/buildTmp -Dteamcity.build.workingDir=/opt/teamcity/work/eca6f4a6c7dc0942 -Dteamcity.buildConfName=Run Sonar Analysis -Dteamcity.buildType.id=Ocash_Server_Develop_RunSonarAnalysis -Dteamcity.configuration.properties.file=/opt/teamcity/temp/buildTmp/teamcity.config7405515631766162181.properties -Dteamcity.maven.userSettings.path=/opt/teamcity/temp/buildTmp/maven_settings_3958587784290432888.xml -Dteamcity.maven.watcher.home=/opt/teamcity/plugins/mavenPlugin/maven-watcher -Dteamcity.projectName=develop -Dteamcity.runner.properties.file=/opt/teamcity/temp/buildTmp/teamcity.runner3411073474831515319.properties -Dteamcity.tests.recentlyFailedTests.file=/opt/teamcity/temp/buildTmp/testsToRunFirst8351999038959962846.txt -Dteamcity.version=2017.2.3 (build 51047) -classpath /opt/teamcity/tools/maven3_2/boot/plexus-classworlds-2.5.2.jar: org.codehaus.plexus.classworlds.launcher.Launcher -f /opt/teamcity/work/eca6f4a6c7dc0942/pom.xml -B lv.ctco.scm:ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo -s /opt/teamcity/temp/buildTmp/maven_settings_3958587784290432888.xml -Pctco -Dstamp=1.0.0
+[01:01:05][Step 1/5] in directory: /opt/teamcity/work/eca6f4a6c7dc0942
+[01:01:06][Step 1/5] [INFO] Scanning for projects...
+[01:01:07][Step 1/5] [WARNING] 
+[01:01:07][Step 1/5] [WARNING] Some problems were encountered while building the effective model for co.uk.psipay.ecx:distributor-app:war:1.2.2
+[01:01:07][Step 1/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: co.uk.psipay.ecx:common:jar -> duplicate declaration of version ${project.version} @ line 65, column 21
+[01:01:07][Step 1/5] [WARNING] 
+[01:01:07][Step 1/5] [WARNING] Some problems were encountered while building the effective model for co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2
+[01:01:07][Step 1/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> duplicate declaration of version ${junit.version} @ line 122, column 21
+[01:01:07][Step 1/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.hamcrest:hamcrest-all:jar -> duplicate declaration of version ${hamcrest.version} @ line 128, column 21
+[01:01:07][Step 1/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework:spring-test:jar -> duplicate declaration of version ${spring.test.version} @ line 134, column 21
+[01:01:07][Step 1/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.mockito:mockito-all:jar -> duplicate declaration of version ${mockito.version} @ line 140, column 21
+[01:01:07][Step 1/5] [WARNING] 
+[01:01:07][Step 1/5] [WARNING] Some problems were encountered while building the effective model for co.uk.psipay.ecx:selenium-test:jar:1.2.2
+[01:01:07][Step 1/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version ${junit.version} vs 4.12 @ line 169, column 21
+[01:01:07][Step 1/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version ${junit.version} vs RELEASE @ line 179, column 21
+[01:01:07][Step 1/5] [WARNING] 
+[01:01:07][Step 1/5] [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[01:01:07][Step 1/5] [WARNING] 
+[01:01:07][Step 1/5] [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[01:01:07][Step 1/5] [WARNING] 
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] [INFO] Reactor Build Order:
+[01:01:07][Step 1/5] [INFO] 
+[01:01:07][Step 1/5] [INFO] ecx-root
+[01:01:07][Step 1/5] [INFO] common-gwt-shared
+[01:01:07][Step 1/5] [INFO] ecx-domain-common
+[01:01:07][Step 1/5] [INFO] common
+[01:01:07][Step 1/5] [INFO] ecx-domain
+[01:01:07][Step 1/5] [INFO] common-gwt-ui
+[01:01:07][Step 1/5] [INFO] ecx-domain-repository
+[01:01:07][Step 1/5] [INFO] ecx-mail-service
+[01:01:07][Step 1/5] [INFO] ecx-domain-service
+[01:01:07][Step 1/5] [INFO] distributor-ui-api-model
+[01:01:07][Step 1/5] [INFO] ecovoucher-internal-api-model
+[01:01:07][Step 1/5] [INFO] common-internal-client
+[01:01:07][Step 1/5] [INFO] ecovoucher-internal-client
+[01:01:07][Step 1/5] [INFO] purchase-internal-api-model
+[01:01:07][Step 1/5] [INFO] purchase-internal-client
+[01:01:07][Step 1/5] [INFO] distributor-gwt-ui
+[01:01:07][Step 1/5] [INFO] purchase-limit-service
+[01:01:07][Step 1/5] [INFO] distributor-app
+[01:01:07][Step 1/5] [INFO] ecovoucher-app
+[01:01:07][Step 1/5] [INFO] management-ui-api-model
+[01:01:07][Step 1/5] [INFO] geo-api-service
+[01:01:07][Step 1/5] [INFO] risk-management-service
+[01:01:07][Step 1/5] [INFO] management-gwt-ui
+[01:01:07][Step 1/5] [INFO] management-app
+[01:01:07][Step 1/5] [INFO] merchant-ui-api-model
+[01:01:07][Step 1/5] [INFO] merchant-gwt-ui
+[01:01:07][Step 1/5] [INFO] merchant-app
+[01:01:07][Step 1/5] [INFO] jwt-util
+[01:01:07][Step 1/5] [INFO] sms-gw
+[01:01:07][Step 1/5] [INFO] client-app
+[01:01:07][Step 1/5] [INFO] public-api-test
+[01:01:07][Step 1/5] [INFO] selenium-test
+[01:01:07][Step 1/5] [INFO]                                                                         
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] [INFO] Building ecx-root 1.2.2
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] co.uk.psipay.ecx:ecx-root
+[01:01:32][co.uk.psipay.ecx:ecx-root] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:32][co.uk.psipay.ecx:ecx-root] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:32][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-root:pom:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecx-root' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/target/failsafe-reports']
+[01:01:07][Step 1/5] [INFO] 
+[01:01:07][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecx-root ---
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:07][Step 1/5] Surefire report watcher
+[01:01:07][Surefire report watcher] Watching paths:
+[01:01:07][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/target/surefire-reports/TEST-*.xml
+[01:01:07][Step 1/5] Surefire report watcher
+[01:01:07][Surefire report watcher] Watching paths:
+[01:01:07][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/target/failsafe-reports/TEST-*.xml
+[01:01:07][Step 1/5] 2018-09-12 01:01:33,299 [ERROR|TeamCityUtils] 
+[01:01:33][Step 1/5] ##teamcity[message text='Version doesn't contains '-SNAPSHOT'' status='ERROR']
+[01:01:08]
+[Step 1/5] Incorrect property name.
+Valid property list format is (name( )*=( )*'escaped_value'( )*)* where escape symbol is "|"
+[01:01:07][Step 1/5] 2018-09-12 01:01:33,299 [ERROR|TeamCityUtils] 
+[01:01:33][Step 1/5] ##teamcity[buildProblem description='Version doesn't contains '-SNAPSHOT'']
+[01:01:08]
+[Step 1/5] Property value not found
+Valid property list format is (name( )*=( )*'escaped_value'( )*)* where escape symbol is "|"
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-root:pom:1.2.2']
+[01:01:07][Step 1/5] [INFO]                                                                         
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] [INFO] Building common-gwt-shared 1.2.2
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] co.uk.psipay.ecx:common-gwt-shared
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] org.apache.maven.plugin.MojoExecutionException: Version doesn't contains '-SNAPSHOT'
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at lv.ctco.maven.scm.plugin.CtcoScmModuleInfo.runExecutions(CtcoScmModuleInfo.java:96)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at lv.ctco.maven.scm.plugin.CtcoScmModuleInfo.execute(CtcoScmModuleInfo.java:64)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:132)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:120)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:355)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:216)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:160)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+[01:01:07][co.uk.psipay.ecx:common-gwt-shared] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[01:01:33][co.uk.psipay.ecx:common-gwt-shared] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:common-gwt-shared] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='common-gwt-shared' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/failsafe-reports']
+[01:01:07][Step 1/5] [INFO] 
+[01:01:07][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ common-gwt-shared ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2']
+[01:01:07][Step 1/5] [INFO]                                                                         
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] [INFO] Building ecx-domain-common 1.2.2
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:07][Step 1/5] co.uk.psipay.ecx:ecx-domain-common
+[01:01:33][co.uk.psipay.ecx:ecx-domain-common] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-common/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-common/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:ecx-domain-common] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-common/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecx-domain-common' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-common/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-common/target/surefire-reports']
+[01:01:07][Step 1/5] [INFO] 
+[01:01:07][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecx-domain-common ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2']
+[01:01:07][Step 1/5] [INFO]                                                                         
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] [INFO] Building common 1.2.2
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-common/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:07][Step 1/5] co.uk.psipay.ecx:common
+[01:01:33][co.uk.psipay.ecx:common] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/common/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/common/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:common] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/common/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:common:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='common' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/common/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/common/target/surefire-reports']
+[01:01:07][Step 1/5] [INFO] 
+[01:01:07][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ common ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:common:jar:1.2.2']
+[01:01:07][Step 1/5] [INFO]                                                                         
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] [INFO] Building ecx-domain 1.2.2
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/common/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:07][Step 1/5] co.uk.psipay.ecx:ecx-domain
+[01:01:33][co.uk.psipay.ecx:ecx-domain] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:ecx-domain] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecx-domain' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/target/failsafe-reports']
+[01:01:07][Step 1/5] [INFO] 
+[01:01:07][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecx-domain ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain:jar:1.2.2']
+[01:01:07][Step 1/5] [INFO]                                                                         
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] [INFO] Building common-gwt-ui 1.2.2
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:07][Step 1/5] co.uk.psipay.ecx:common-gwt-ui
+[01:01:33][co.uk.psipay.ecx:common-gwt-ui] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:common-gwt-ui] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:common-gwt-ui:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='common-gwt-ui' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/target/surefire-reports']
+[01:01:07][Step 1/5] [INFO] 
+[01:01:07][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ common-gwt-ui ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:common-gwt-ui:jar:1.2.2']
+[01:01:07][Step 1/5] [INFO]                                                                         
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] [INFO] Building ecx-domain-repository 1.2.2
+[01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:07][Step 1/5] co.uk.psipay.ecx:ecx-domain-repository
+[01:01:33][co.uk.psipay.ecx:ecx-domain-repository] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:07][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:ecx-domain-repository] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecx-domain-repository' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecx-domain-repository ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building ecx-mail-service 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:ecx-mail-service
+[01:01:33][co.uk.psipay.ecx:ecx-mail-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-email-service/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-email-service/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-common/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-common/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/common/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/common/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-email-service/target/surefire-reports/TEST-*.xml
+[01:01:33][co.uk.psipay.ecx:ecx-mail-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-email-service/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecx-mail-service' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-email-service/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-email-service/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecx-mail-service ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building ecx-domain-service 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-email-service/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:ecx-domain-service
+[01:01:33][co.uk.psipay.ecx:ecx-domain-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:ecx-domain-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecx-domain-service' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecx-domain-service ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building distributor-ui-api-model 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:distributor-ui-api-model
+[01:01:33][co.uk.psipay.ecx:distributor-ui-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:distributor-ui-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:distributor-ui-api-model:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='distributor-ui-api-model' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ distributor-ui-api-model ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:distributor-ui-api-model:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building ecovoucher-internal-api-model 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:ecovoucher-internal-api-model
+[01:01:33][co.uk.psipay.ecx:ecovoucher-internal-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-api-model/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-api-model/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:ecovoucher-internal-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-api-model/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecovoucher-internal-api-model' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-api-model/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-api-model/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecovoucher-internal-api-model ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building common-internal-client 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-api-model/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:common-internal-client
+[01:01:33][co.uk.psipay.ecx:common-internal-client] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/common-internal-client/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/common-internal-client/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:common-internal-client] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/common-internal-client/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:common-internal-client:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='common-internal-client' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/common-internal-client/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/common-internal-client/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ common-internal-client ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:common-internal-client:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building ecovoucher-internal-client 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/common-internal-client/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:ecovoucher-internal-client
+[01:01:33][co.uk.psipay.ecx:ecovoucher-internal-client] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:ecovoucher-internal-client] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecovoucher-internal-client:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecovoucher-internal-client' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecovoucher-internal-client ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecovoucher-internal-client:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building purchase-internal-api-model 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:purchase-internal-api-model
+[01:01:33][co.uk.psipay.ecx:purchase-internal-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-api-model/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-api-model/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:purchase-internal-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-api-model/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:purchase-internal-api-model:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='purchase-internal-api-model' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-api-model/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-api-model/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ purchase-internal-api-model ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:purchase-internal-api-model:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building purchase-internal-client 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-api-model/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:purchase-internal-client
+[01:01:33][co.uk.psipay.ecx:purchase-internal-client] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:purchase-internal-client] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:purchase-internal-client:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='purchase-internal-client' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ purchase-internal-client ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:purchase-internal-client:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building distributor-gwt-ui 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:distributor-gwt-ui
+[01:01:33][co.uk.psipay.ecx:distributor-gwt-ui] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:distributor-gwt-ui] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:distributor-gwt-ui:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='distributor-gwt-ui' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ distributor-gwt-ui ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:distributor-gwt-ui:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building purchase-limit-service 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:purchase-limit-service
+[01:01:33][co.uk.psipay.ecx:purchase-limit-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:purchase-limit-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:purchase-limit-service:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='purchase-limit-service' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ purchase-limit-service ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:purchase-limit-service:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building distributor-app 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:distributor-app
+[01:01:33][co.uk.psipay.ecx:distributor-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:distributor-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:distributor-app:war:1.2.2' groupId='co.uk.psipay.ecx' artifactId='distributor-app' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ distributor-app ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:distributor-app:war:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building ecovoucher-app 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:ecovoucher-app
+[01:01:33][co.uk.psipay.ecx:ecovoucher-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:ecovoucher-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecovoucher-app:war:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecovoucher-app' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecovoucher-app ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecovoucher-app:war:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building management-ui-api-model 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:management-ui-api-model
+[01:01:33][co.uk.psipay.ecx:management-ui-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:management-ui-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:management-ui-api-model:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='management-ui-api-model' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ management-ui-api-model ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:management-ui-api-model:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building geo-api-service 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:geo-api-service
+[01:01:33][co.uk.psipay.ecx:geo-api-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:geo-api-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:geo-api-service:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='geo-api-service' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ geo-api-service ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:geo-api-service:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building risk-management-service 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:risk-management-service
+[01:01:33][co.uk.psipay.ecx:risk-management-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:risk-management-service] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:risk-management-service:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='risk-management-service' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ risk-management-service ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:risk-management-service:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building management-gwt-ui 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:management-gwt-ui
+[01:01:33][co.uk.psipay.ecx:management-gwt-ui] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:management-gwt-ui] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:management-gwt-ui:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='management-gwt-ui' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ management-gwt-ui ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:management-gwt-ui:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building management-app 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:management-app
+[01:01:33][co.uk.psipay.ecx:management-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/management-app/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/management-app/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:management-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/management-app/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:management-app:war:1.2.2' groupId='co.uk.psipay.ecx' artifactId='management-app' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/management-app/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/management-app/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ management-app ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:management-app:war:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building merchant-ui-api-model 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/management-app/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:merchant-ui-api-model
+[01:01:33][co.uk.psipay.ecx:merchant-ui-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:merchant-ui-api-model] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:merchant-ui-api-model:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='merchant-ui-api-model' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ merchant-ui-api-model ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:merchant-ui-api-model:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building merchant-gwt-ui 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:merchant-gwt-ui
+[01:01:33][co.uk.psipay.ecx:merchant-gwt-ui] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:merchant-gwt-ui] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:merchant-gwt-ui:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='merchant-gwt-ui' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ merchant-gwt-ui ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:merchant-gwt-ui:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building merchant-app 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:merchant-app
+[01:01:33][co.uk.psipay.ecx:merchant-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:merchant-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:merchant-app:war:1.2.2' groupId='co.uk.psipay.ecx' artifactId='merchant-app' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ merchant-app ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:merchant-app:war:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building jwt-util 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:jwt-util
+[01:01:33][co.uk.psipay.ecx:jwt-util] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/jwt-util/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/jwt-util/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:jwt-util] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/jwt-util/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:jwt-util:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='jwt-util' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/jwt-util/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/jwt-util/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ jwt-util ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:jwt-util:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building sms-gw 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/jwt-util/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:sms-gw
+[01:01:33][co.uk.psipay.ecx:sms-gw] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/sms-gw/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/sms-gw/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:sms-gw] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/sms-gw/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:sms-gw:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='sms-gw' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/sms-gw/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/sms-gw/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ sms-gw ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:sms-gw:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building client-app 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/sms-gw/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:client-app
+[01:01:33][co.uk.psipay.ecx:client-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/client-app/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/client-app/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:client-app] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/client-app/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:client-app:war:1.2.2' groupId='co.uk.psipay.ecx' artifactId='client-app' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/client-app/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/client-app/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ client-app ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:client-app:war:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building public-api-test 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/client-app/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:public-api-test
+[01:01:33][co.uk.psipay.ecx:public-api-test] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:public-api-test] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:public-api-test:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='public-api-test' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/target/failsafe-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ public-api-test ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:public-api-test:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO]                                                                         
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Building selenium-test 1.2.2
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] co.uk.psipay.ecx:selenium-test
+[01:01:33][co.uk.psipay.ecx:selenium-test] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:33][co.uk.psipay.ecx:selenium-test] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:33][Step 1/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:selenium-test:jar:1.2.2' groupId='co.uk.psipay.ecx' artifactId='selenium-test' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/target/failsafe-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/target/surefire-reports']
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ selenium-test ---
+[01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:selenium-test:jar:1.2.2']
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Reactor Summary:
+[01:01:08][Step 1/5] [INFO] 
+[01:01:08][Step 1/5] [INFO] ecx-root ........................................... SUCCESS [  0.468 s]
+[01:01:08][Step 1/5] [INFO] common-gwt-shared .................................. SUCCESS [  0.002 s]
+[01:01:08][Step 1/5] [INFO] ecx-domain-common .................................. SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] common ............................................. SUCCESS [  0.003 s]
+[01:01:08][Step 1/5] [INFO] ecx-domain ......................................... SUCCESS [  0.006 s]
+[01:01:08][Step 1/5] [INFO] common-gwt-ui ...................................... SUCCESS [  0.002 s]
+[01:01:08][Step 1/5] [INFO] ecx-domain-repository .............................. SUCCESS [  0.009 s]
+[01:01:08][Step 1/5] [INFO] ecx-mail-service ................................... SUCCESS [  0.003 s]
+[01:01:08][Step 1/5] [INFO] ecx-domain-service ................................. SUCCESS [  0.006 s]
+[01:01:08][Step 1/5] [INFO] distributor-ui-api-model ........................... SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] ecovoucher-internal-api-model ...................... SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] common-internal-client ............................. SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] ecovoucher-internal-client ......................... SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] purchase-internal-api-model ........................ SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] purchase-internal-client ........................... SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] distributor-gwt-ui ................................. SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] purchase-limit-service ............................. SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] distributor-app .................................... SUCCESS [  0.008 s]
+[01:01:08][Step 1/5] [INFO] ecovoucher-app ..................................... SUCCESS [  0.002 s]
+[01:01:08][Step 1/5] [INFO] management-ui-api-model ............................ SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] geo-api-service .................................... SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] risk-management-service ............................ SUCCESS [  0.003 s]
+[01:01:08][Step 1/5] [INFO] management-gwt-ui .................................. SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] management-app ..................................... SUCCESS [  0.002 s]
+[01:01:08][Step 1/5] [INFO] merchant-ui-api-model .............................. SUCCESS [  0.000 s]
+[01:01:08][Step 1/5] [INFO] merchant-gwt-ui .................................... SUCCESS [  0.000 s]
+[01:01:08][Step 1/5] [INFO] merchant-app ....................................... SUCCESS [  0.002 s]
+[01:01:08][Step 1/5] [INFO] jwt-util ........................................... SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] sms-gw ............................................. SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] client-app ......................................... SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] public-api-test .................................... SUCCESS [  0.008 s]
+[01:01:08][Step 1/5] [INFO] selenium-test ...................................... SUCCESS [  0.001 s]
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] BUILD SUCCESS
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [INFO] Total time: 1.043 s
+[01:01:08][Step 1/5] [INFO] Finished at: 2018-09-12T01:01:33+03:00
+[01:01:08][Step 1/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:08][Step 1/5] [INFO] Final Memory: 13M/212M
+[01:01:08][Step 1/5] [INFO] ------------------------------------------------------------------------
+[01:01:08][Step 1/5] [WARNING] The requested profile "ctco" could not be activated because it does not exist.
+[01:01:08][Step 1/5] Process exited with code 0
+[01:01:08][Step 1/5] Publishing artifacts
+[01:01:08][Publishing artifacts] Collecting files to publish: [/opt/teamcity/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity]
+[01:01:08][Publishing artifacts] Publishing 1 file using [ArtifactsCachePublisher]: /opt/teamcity/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity
+[01:01:08][Publishing artifacts] Publishing 1 file using [WebPublisher]: /opt/teamcity/temp/buildTmp/.tc-maven-bi/maven-build-info.xml.gz => .teamcity
+[01:01:08][Step 1/5] Waiting for 64 service processes to complete
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-email-service/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-api-model/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-api-model/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/common-internal-client/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/common-internal-client/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-api-model/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-api-model/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/management-app/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/management-app/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/jwt-util/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/jwt-util/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/sms-gw/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/sms-gw/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/client-app/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/client-app/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/target/surefire-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/target/failsafe-reports/TEST-*.xml
+[01:01:08][Step 1/5] Surefire report watcher
+[01:01:08][Surefire report watcher] Watching paths:
+[01:01:08][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/target/surefire-reports/TEST-*.xml
+[01:01:08]Step 2/5: set Build Number (Command Line)
+[01:01:08][Step 2/5] Starting: /opt/teamcity/temp/agentTmp/custom_script3113530027990552975
+[01:01:08][Step 2/5] in directory: /opt/teamcity/work/eca6f4a6c7dc0942
+[01:01:08][Step 2/5] /opt/teamcity/temp/agentTmp/custom_script3113530027990552975: line 5: syntax error near unexpected token `newline'
+[01:01:08][Step 2/5] /opt/teamcity/temp/agentTmp/custom_script3113530027990552975: line 5: `	BUILD_NUMBER=<empty>'
+[01:01:08][Step 2/5] Process exited with code 2
+[01:00:43][Step 2/5] Process exited with code 2
+[01:01:08][Step 2/5] Step set Build Number (Command Line) failed
+[01:01:08]Step 3/5: build and prepare jacoco report (Maven)
+[01:01:08][Step 3/5] Build step build and prepare jacoco report (Maven) is skipped because the previous step has failed
+[01:01:08]Step 4/5: Prepare for sonar (Command Line)
+[01:01:08][Step 4/5] Build step Prepare for sonar (Command Line) is skipped because the previous step has failed
+[01:01:08]Step 5/5: Run Sonar (Maven) (1m:15s)
+[01:01:08][Step 5/5] Using predefined Maven user settings: settings.xml
+[01:01:08][Step 5/5] Initial M2_HOME not set
+[01:01:08][Step 5/5] Current M2_HOME = /opt/teamcity/tools/maven3_3
+[01:01:08][Step 5/5] PATH = /opt/teamcity/tools/maven3_3/bin:/opt/jdk1.8.0_162/bin:/opt/node/bin:/opt/p4/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+[01:01:08][Step 5/5] Using watcher: /opt/teamcity/plugins/mavenPlugin/maven-watcher-jdk16/maven-watcher-agent.jar
+[01:01:08][Step 5/5] Initial MAVEN_OPTS not set
+[01:01:08][Step 5/5] Current MAVEN_OPTS = -Xmx512m -XX:PermSize=512M -XX:MaxPermSize=1024M
+[01:01:08][Step 5/5] Starting: /opt/jdk1.8.0_162/bin/java -Dagent.home.dir=/opt/teamcity -Dagent.name=ct-vm-v-215029 -Dagent.ownPort=9090 -Dagent.work.dir=/opt/teamcity/work -Dbuild.number=114 -Dbuild.vcs.number=cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05 -Dbuild.vcs.number.1=cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05 -Dbuild.vcs.number.Edev_GitCtcoLv=cdd4b5d31cfa0280fd4132125a1a6f13a0edcb05 -Dclassworlds.conf=/opt/teamcity/temp/buildTmp/teamcity.m2.conf -Dcom.jetbrains.maven.watcher.report.file=/opt/teamcity/temp/buildTmp/maven-build-info.xml -Djava.io.tmpdir=/opt/teamcity/temp/buildTmp -Dmaven.home=/opt/teamcity/tools/maven3_3 -Dmaven.multiModuleProjectDirectory=/opt/teamcity/work/eca6f4a6c7dc0942 -Dmaven.repo.local=/home/teamcity/.m2/repository -Dteamcity.agent.cpuBenchmark=632 -Dteamcity.agent.dotnet.agent_url=http://localhost:9090/RPC2 -Dteamcity.agent.dotnet.build_id=4230624 -Dteamcity.auth.password=******* -Dteamcity.auth.userId=TeamCityBuildId=4230624 -Dteamcity.build.changedFiles.file=/opt/teamcity/temp/buildTmp/changedFiles6223309963822358815.txt -Dteamcity.build.checkoutDir=/opt/teamcity/work/eca6f4a6c7dc0942 -Dteamcity.build.id=4230624 -Dteamcity.build.properties.file=/opt/teamcity/temp/buildTmp/teamcity.build5792220674171395811.properties -Dteamcity.build.tempDir=/opt/teamcity/temp/buildTmp -Dteamcity.build.workingDir=/opt/teamcity/work/eca6f4a6c7dc0942 -Dteamcity.buildConfName=Run Sonar Analysis -Dteamcity.buildType.id=Ocash_Server_Develop_RunSonarAnalysis -Dteamcity.configuration.properties.file=/opt/teamcity/temp/buildTmp/teamcity.config7405515631766162181.properties -Dteamcity.maven.userSettings.path=/opt/teamcity/temp/buildTmp/maven_settings_587801505085932677.xml -Dteamcity.maven.watcher.home=/opt/teamcity/plugins/mavenPlugin/maven-watcher-jdk16 -Dteamcity.projectName=develop -Dteamcity.runner.properties.file=/opt/teamcity/temp/buildTmp/teamcity.runner3411073474831515319.properties -Dteamcity.tests.recentlyFailedTests.file=/opt/teamcity/temp/buildTmp/testsToRunFirst8351999038959962846.txt -Dteamcity.version=2017.2.3 (build 51047) -Xmx512m -XX:PermSize=512M -XX:MaxPermSize=1024M -classpath /opt/teamcity/tools/maven3_3/boot/plexus-classworlds-2.5.2.jar: org.codehaus.plexus.classworlds.launcher.Launcher -f /opt/teamcity/work/eca6f4a6c7dc0942/pom.xml -B org.sonarsource.scanner.maven:sonar-maven-plugin:3.0.2:sonar -s /opt/teamcity/temp/buildTmp/maven_settings_587801505085932677.xml -Pctco -Dsonar.host.url=https://sonar.ctco.lv -Dsonar.login=******* -Dsonar.projectVersion=114 -Dsonar.links.ci=https://teamcity.ctco.lv/viewType.html?buildTypeId=Ocash_Server_Develop_RunSonarAnalysis
+[01:01:08][Step 5/5] in directory: /opt/teamcity/work/eca6f4a6c7dc0942
+[01:01:08][Step 5/5] Java HotSpot(TM) 64-Bit Server VM warning: ignoring option PermSize=512M; support was removed in 8.0
+[01:01:08][Step 5/5] Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=1024M; support was removed in 8.0
+[01:01:10][Step 5/5] [INFO] Scanning for projects...
+[01:01:10][Step 5/5] [WARNING] 
+[01:01:10][Step 5/5] [WARNING] Some problems were encountered while building the effective model for co.uk.psipay.ecx:distributor-app:war:1.2.2
+[01:01:10][Step 5/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: co.uk.psipay.ecx:common:jar -> duplicate declaration of version ${project.version} @ line 65, column 21
+[01:01:10][Step 5/5] [WARNING] 
+[01:01:10][Step 5/5] [WARNING] Some problems were encountered while building the effective model for co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2
+[01:01:10][Step 5/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> duplicate declaration of version ${junit.version} @ line 122, column 21
+[01:01:10][Step 5/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.hamcrest:hamcrest-all:jar -> duplicate declaration of version ${hamcrest.version} @ line 128, column 21
+[01:01:10][Step 5/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework:spring-test:jar -> duplicate declaration of version ${spring.test.version} @ line 134, column 21
+[01:01:10][Step 5/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.mockito:mockito-all:jar -> duplicate declaration of version ${mockito.version} @ line 140, column 21
+[01:01:10][Step 5/5] [WARNING] 
+[01:01:10][Step 5/5] [WARNING] Some problems were encountered while building the effective model for co.uk.psipay.ecx:selenium-test:jar:1.2.2
+[01:01:10][Step 5/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version ${junit.version} vs 4.12 @ line 169, column 21
+[01:01:10][Step 5/5] [WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version ${junit.version} vs RELEASE @ line 179, column 21
+[01:01:10][Step 5/5] [WARNING] 
+[01:01:10][Step 5/5] [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[01:01:10][Step 5/5] [WARNING] 
+[01:01:10][Step 5/5] [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[01:01:10][Step 5/5] [WARNING] 
+[01:01:10][Step 5/5] [INFO] ------------------------------------------------------------------------
+[01:01:10][Step 5/5] [INFO] Reactor Build Order:
+[01:01:10][Step 5/5] [INFO] 
+[01:01:10][Step 5/5] [INFO] ecx-root
+[01:01:10][Step 5/5] [INFO] common-gwt-shared
+[01:01:10][Step 5/5] [INFO] ecx-domain-common
+[01:01:10][Step 5/5] [INFO] common
+[01:01:10][Step 5/5] [INFO] ecx-domain
+[01:01:10][Step 5/5] [INFO] common-gwt-ui
+[01:01:10][Step 5/5] [INFO] ecx-domain-repository
+[01:01:10][Step 5/5] [INFO] ecx-mail-service
+[01:01:10][Step 5/5] [INFO] ecx-domain-service
+[01:01:10][Step 5/5] [INFO] distributor-ui-api-model
+[01:01:10][Step 5/5] [INFO] ecovoucher-internal-api-model
+[01:01:10][Step 5/5] [INFO] common-internal-client
+[01:01:10][Step 5/5] [INFO] ecovoucher-internal-client
+[01:01:10][Step 5/5] [INFO] purchase-internal-api-model
+[01:01:10][Step 5/5] [INFO] purchase-internal-client
+[01:01:10][Step 5/5] [INFO] distributor-gwt-ui
+[01:01:10][Step 5/5] [INFO] purchase-limit-service
+[01:01:10][Step 5/5] [INFO] distributor-app
+[01:01:10][Step 5/5] [INFO] ecovoucher-app
+[01:01:10][Step 5/5] [INFO] management-ui-api-model
+[01:01:10][Step 5/5] [INFO] geo-api-service
+[01:01:10][Step 5/5] [INFO] risk-management-service
+[01:01:10][Step 5/5] [INFO] management-gwt-ui
+[01:01:10][Step 5/5] [INFO] management-app
+[01:01:10][Step 5/5] [INFO] merchant-ui-api-model
+[01:01:10][Step 5/5] [INFO] merchant-gwt-ui
+[01:01:10][Step 5/5] [INFO] merchant-app
+[01:01:10][Step 5/5] [INFO] jwt-util
+[01:01:10][Step 5/5] [INFO] sms-gw
+[01:01:10][Step 5/5] [INFO] client-app
+[01:01:10][Step 5/5] [INFO] public-api-test
+[01:01:10][Step 5/5] [INFO] selenium-test
+[01:01:10][Step 5/5] [INFO]                                                                         
+[01:01:10][Step 5/5] [INFO] ------------------------------------------------------------------------
+[01:01:10][Step 5/5] [INFO] Building ecx-root 1.2.2
+[01:01:10][Step 5/5] [INFO] ------------------------------------------------------------------------
+[01:01:10][Step 5/5] co.uk.psipay.ecx:ecx-root (1m:12s)
+[01:01:35][co.uk.psipay.ecx:ecx-root] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/target/surefire-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:10][Step 5/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/target/surefire-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:35][co.uk.psipay.ecx:ecx-root] ##teamcity[importData tc:tags='tc:internal' type='surefire' path='/opt/teamcity/work/eca6f4a6c7dc0942/target/failsafe-reports/TEST-*.xml' whenNoDataPublished='nothing' logAsInternal='true']
+[01:01:35][Step 5/5] ##teamcity[projectStarted tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-root:pom:1.2.2' groupId='co.uk.psipay.ecx' artifactId='ecx-root' testReportsDir0='/opt/teamcity/work/eca6f4a6c7dc0942/target/surefire-reports' testReportsDir1='/opt/teamcity/work/eca6f4a6c7dc0942/target/failsafe-reports']
+[01:01:10][Step 5/5] Importing data from '/opt/teamcity/work/eca6f4a6c7dc0942/target/failsafe-reports/TEST-*.xml' (not existing file) with 'surefire' processor
+[01:01:10][Step 5/5] Surefire report watcher
+[01:01:10][Surefire report watcher] Watching paths:
+[01:01:10][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/target/surefire-reports/TEST-*.xml
+[01:01:10][Step 5/5] Surefire report watcher
+[01:01:10][Surefire report watcher] Watching paths:
+[01:01:10][Surefire report watcher] /opt/teamcity/work/eca6f4a6c7dc0942/target/failsafe-reports/TEST-*.xml
+[01:01:11][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:11][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:11][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:13][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:13][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:13][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:13][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:13][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:13][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:14][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:14][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:14][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:14][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:14][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:14][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:14][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:14][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:14][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-repository/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:14][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:14][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:14][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:14][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:14][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:14][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:15][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/org/jxls/jxls/maven-metadata.xml
+[01:01:15][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/../repo/org/jxls/jxls/maven-metadata.xml
+[01:01:15][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/org/jxls/jxls/maven-metadata.xml
+[01:01:15][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/org/jxls/jxls/maven-metadata.xml
+[01:01:15][Step 5/5] [INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jxls/jxls/maven-metadata.xml (939 B at 15.0 KB/sec)
+[01:01:15][Step 5/5] [INFO] Downloaded: https://artifactory.ctco.lv/artifactory/global-repo/org/jxls/jxls/maven-metadata.xml (939 B at 1.2 KB/sec)
+[01:01:16][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:16][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:16][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:16][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:16][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:16][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:16][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:16][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecx-domain-service/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:17][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:17][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-ui-api-model/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:17][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:17][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/../repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-internal-client/../repo/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:17][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:17][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-internal-client:jar:1.2.2 (compile)
+[01:01:17][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:17][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/../repo/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-internal-client/../repo/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:18][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:18][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-internal-client:jar:1.2.2 (compile)
+[01:01:18][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-api-model:jar:1.2.2 (compile)
+[01:01:18][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:18][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/../repo/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2.jar
+[01:01:18][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:18][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:18][Step 5/5] [WARNING] o co.uk.psipay.ecx:distributor-ui-api-model:jar:1.2.2 (compile)
+[01:01:18][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:18][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:18][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:18][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:1.2.2 (compile)
+[01:01:18][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:18][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:18][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/purchase-limit-service/../repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:19][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:19][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:19][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:19][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:19][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:19][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:19][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2 (compile)
+[01:01:19][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:19][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:19][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:20][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/ecovoucher-internal-client/1.2.2/ecovoucher-internal-client-1.2.2.jar
+[01:01:20][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/purchase-internal-client/1.2.2/purchase-internal-client-1.2.2.jar
+[01:01:20][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/distributor-gwt-ui/1.2.2/distributor-gwt-ui-1.2.2.jar
+[01:01:20][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2-sources.jar
+[01:01:20][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/distributor-gwt-ui/1.2.2/distributor-gwt-ui-1.2.2-sources.jar
+[01:01:20][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2-sources.jar
+[01:01:20][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/purchase-limit-service/1.2.2/purchase-limit-service-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/ecovoucher-internal-client/1.2.2/ecovoucher-internal-client-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/purchase-internal-client/1.2.2/purchase-internal-client-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/distributor-gwt-ui/1.2.2/distributor-gwt-ui-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/distributor-gwt-ui/1.2.2/distributor-gwt-ui-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/distributor-app/../repo/co/uk/psipay/ecx/purchase-limit-service/1.2.2/purchase-limit-service-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/ecovoucher-internal-client/1.2.2/ecovoucher-internal-client-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/purchase-internal-client/1.2.2/purchase-internal-client-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/distributor-gwt-ui/1.2.2/distributor-gwt-ui-1.2.2.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/distributor-gwt-ui/1.2.2/distributor-gwt-ui-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2-sources.jar
+[01:01:21][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/purchase-limit-service/1.2.2/purchase-limit-service-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/ecovoucher-internal-client/1.2.2/ecovoucher-internal-client-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/purchase-internal-client/1.2.2/purchase-internal-client-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/distributor-gwt-ui/1.2.2/distributor-gwt-ui-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2-sources.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/distributor-gwt-ui/1.2.2/distributor-gwt-ui-1.2.2-sources.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/distributor-ui-api-model/1.2.2/distributor-ui-api-model-1.2.2-sources.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2-sources.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2-sources.jar
+[01:01:22][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/purchase-limit-service/1.2.2/purchase-limit-service-1.2.2.jar
+[01:01:22][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:distributor-ui-api-model:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-client:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-internal-client:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-client:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-api-model:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:distributor-gwt-ui:jar:1.2.2 (provided)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:1.2.2 (provided)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:sources:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:distributor-gwt-ui:jar:sources:1.2.2 (provided)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:distributor-ui-api-model:jar:sources:1.2.2 (provided)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:sources:1.2.2 (provided)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:sources:1.2.2 (provided)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-limit-service:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/ecovoucher-app/../repo/co/uk/psipay/ecx/purchase-limit-service/1.2.2/purchase-limit-service-1.2.2.jar
+[01:01:22][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-api-model:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-limit-service:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-ui-api-model/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:22][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/../repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/../repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:22][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/geo-api-service/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:22][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:22][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:22][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/geo-api-service/1.2.2/geo-api-service-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/geo-api-service/1.2.2/geo-api-service-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/risk-management-service/../repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/geo-api-service/1.2.2/geo-api-service-1.2.2.jar
+[01:01:28][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/geo-api-service/1.2.2/geo-api-service-1.2.2.jar
+[01:01:28][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:geo-api-service:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2 (compile)
+[01:01:28][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:28][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/../repo/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2.jar
+[01:01:35][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:35][Step 5/5] [WARNING] o co.uk.psipay.ecx:management-ui-api-model:jar:1.2.2 (compile)
+[01:01:35][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:35][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:35][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:35][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:35][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:1.2.2 (compile)
+[01:01:35][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:35][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/risk-management-service/1.2.2/risk-management-service-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/management-gwt-ui/1.2.2/management-gwt-ui-1.2.2.jar
+[01:01:35][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/management-gwt-ui/1.2.2/management-gwt-ui-1.2.2-sources.jar
+[01:01:35][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/risk-management-service/1.2.2/risk-management-service-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/geo-api-service/1.2.2/geo-api-service-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/management-gwt-ui/1.2.2/management-gwt-ui-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/ecovoucher-internal-client/1.2.2/ecovoucher-internal-client-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/purchase-internal-client/1.2.2/purchase-internal-client-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/management-gwt-ui/1.2.2/management-gwt-ui-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/management-app/../repo/co/uk/psipay/ecx/purchase-limit-service/1.2.2/purchase-limit-service-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/risk-management-service/1.2.2/risk-management-service-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/management-gwt-ui/1.2.2/management-gwt-ui-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/management-gwt-ui/1.2.2/management-gwt-ui-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/risk-management-service/1.2.2/risk-management-service-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/management-gwt-ui/1.2.2/management-gwt-ui-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/management-gwt-ui/1.2.2/management-gwt-ui-1.2.2-sources.jar
+[01:01:42][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/management-ui-api-model/1.2.2/management-ui-api-model-1.2.2-sources.jar
+[01:01:42][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:management-ui-api-model:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:risk-management-service:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:geo-api-service:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:management-gwt-ui:jar:1.2.2 (provided)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:1.2.2 (provided)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-client:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-internal-client:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-client:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-api-model:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:sources:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:management-gwt-ui:jar:sources:1.2.2 (provided)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:management-ui-api-model:jar:sources:1.2.2 (provided)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:sources:1.2.2 (provided)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:sources:1.2.2 (provided)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-limit-service:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:42][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-ui-api-model/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:42][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:42][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:42][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2.jar
+[01:01:49][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/../repo/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2.jar
+[01:01:49][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:49][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:49][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:49][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:49][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:49][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2.jar
+[01:01:49][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2.jar
+[01:01:49][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:49][Step 5/5] [WARNING] o co.uk.psipay.ecx:merchant-ui-api-model:jar:1.2.2 (compile)
+[01:01:49][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:49][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:49][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:49][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:49][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:1.2.2 (compile)
+[01:01:49][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:49][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/merchant-gwt-ui/1.2.2/merchant-gwt-ui-1.2.2-sources.jar
+[01:01:49][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/ecovoucher-internal-client/1.2.2/ecovoucher-internal-client-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/purchase-internal-client/1.2.2/purchase-internal-client-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/merchant-gwt-ui/1.2.2/merchant-gwt-ui-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/common-gwt-ui/1.2.2/common-gwt-ui-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/merchant-app/../repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/merchant-gwt-ui/1.2.2/merchant-gwt-ui-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/merchant-gwt-ui/1.2.2/merchant-gwt-ui-1.2.2-sources.jar
+[01:01:56][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/merchant-ui-api-model/1.2.2/merchant-ui-api-model-1.2.2-sources.jar
+[01:01:56][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:merchant-ui-api-model:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-client:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-internal-client:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-client:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-api-model:jar:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:sources:1.2.2 (compile)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:merchant-gwt-ui:jar:sources:1.2.2 (provided)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:1.2.2 (provided)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:merchant-ui-api-model:jar:sources:1.2.2 (provided)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-ui:jar:sources:1.2.2 (provided)
+[01:01:56][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:sources:1.2.2 (provided)
+[01:01:56][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:56][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/sms-gw/1.2.2/sms-gw-1.2.2.jar
+[01:01:56][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/co/uk/psipay/ecx/jwt-util/1.2.2/jwt-util-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/ecx-domain/1.2.2/ecx-domain-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/ecx-domain-common/1.2.2/ecx-domain-common-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/common-gwt-shared/1.2.2/common-gwt-shared-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/jwt-util/1.2.2/jwt-util-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/sms-gw/1.2.2/sms-gw-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/common/1.2.2/common-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/ecx-domain-service/1.2.2/ecx-domain-service-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/ecx-mail-service/1.2.2/ecx-mail-service-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/geo-api-service/1.2.2/geo-api-service-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/ecovoucher-internal-api-model/1.2.2/ecovoucher-internal-api-model-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/purchase-internal-api-model/1.2.2/purchase-internal-api-model-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/purchase-internal-client/1.2.2/purchase-internal-client-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/common-internal-client/1.2.2/common-internal-client-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/purchase-limit-service/1.2.2/purchase-limit-service-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/risk-management-service/1.2.2/risk-management-service-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/client-app/../repo/co/uk/psipay/ecx/ecx-domain-repository/1.2.2/ecx-domain-repository-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/jwt-util/1.2.2/jwt-util-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/co/uk/psipay/ecx/sms-gw/1.2.2/sms-gw-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/jwt-util/1.2.2/jwt-util-1.2.2.jar
+[01:01:57][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/co/uk/psipay/ecx/sms-gw/1.2.2/sms-gw-1.2.2.jar
+[01:01:57][Step 5/5] [WARNING] The following dependencies could not be resolved at this point of the build but seem to be part of the reactor:
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-gwt-shared:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-repository:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:risk-management-service:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:jwt-util:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:sms-gw:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:common:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-domain-service:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecx-mail-service:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:geo-api-service:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:ecovoucher-internal-api-model:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-api-model:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-internal-client:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:common-internal-client:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] o co.uk.psipay.ecx:purchase-limit-service:jar:1.2.2 (compile)
+[01:01:57][Step 5/5] [WARNING] Try running the build up to the lifecycle phase "package"
+[01:01:58][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/junit/junit/maven-metadata.xml
+[01:01:58][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/../repo/junit/junit/maven-metadata.xml
+[01:01:58][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/junit/junit/maven-metadata.xml
+[01:01:58][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/maven-metadata.xml
+[01:01:58][Step 5/5] [INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/maven-metadata.xml (2 KB at 16.4 KB/sec)
+[01:01:59][Step 5/5] [INFO] Downloaded: https://artifactory.ctco.lv/artifactory/global-repo/junit/junit/maven-metadata.xml (2 KB at 1.8 KB/sec)
+[01:01:59][Step 5/5] [INFO] Downloading: https://artifactory.ctco.lv/artifactory/global-repo/io/jsonwebtoken/jjwt/maven-metadata.xml
+[01:01:59][Step 5/5] [INFO] Downloading: file:///opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/../repo/io/jsonwebtoken/jjwt/maven-metadata.xml
+[01:01:59][Step 5/5] [INFO] Downloading: http://repo.enonic.com/public/io/jsonwebtoken/jjwt/maven-metadata.xml
+[01:01:59][Step 5/5] [INFO] Downloading: https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/maven-metadata.xml
+[01:01:59][Step 5/5] [INFO] Downloaded: https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/maven-metadata.xml (626 B at 22.6 KB/sec)
+[01:02:00][Step 5/5] [INFO] Downloaded: https://artifactory.ctco.lv/artifactory/global-repo/io/jsonwebtoken/jjwt/maven-metadata.xml (626 B at 1.2 KB/sec)
+[01:02:00][Step 5/5] [INFO] 
+[01:02:00][Step 5/5] [INFO] --- sonar-maven-plugin:3.0.2:sonar (default-cli) @ ecx-root ---
+[01:02:00][Step 5/5] [INFO] User cache: /home/teamcity/.sonar/cache
+[01:02:01][Step 5/5] [INFO] Load global repositories
+[01:02:01][Step 5/5] [INFO] Load global repositories (done) | time=204ms
+[01:02:01][Step 5/5] [INFO] User cache: /home/teamcity/.sonar/cache
+[01:02:01][Step 5/5] [INFO] Load plugins index
+[01:02:01][Step 5/5] [INFO] Load plugins index (done) | time=5ms
+[01:02:01][Step 5/5] [INFO] SonarQube version: 5.6.6
+[01:02:02][Step 5/5] [INFO] Module MavenProject: co.uk.psipay.ecx:common-gwt-ui:1.2.2 @ /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-ui/pom.xml skipped by property 'sonar.skip'
+[01:02:03][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:03][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from lib
+[01:02:03][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from enonic
+[01:02:03][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from central
+[01:02:03][Step 5/5] [INFO] Module MavenProject: co.uk.psipay.ecx:distributor-gwt-ui:1.2.2 @ /opt/teamcity/work/eca6f4a6c7dc0942/distributor-gwt-ui/pom.xml skipped by property 'sonar.skip'
+[01:02:04][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:04][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:05][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:05][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:06][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:06][Step 5/5] [INFO] Module MavenProject: co.uk.psipay.ecx:management-gwt-ui:1.2.2 @ /opt/teamcity/work/eca6f4a6c7dc0942/management-gwt-ui/pom.xml skipped by property 'sonar.skip'
+[01:02:06][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:07][Step 5/5] [INFO] Module MavenProject: co.uk.psipay.ecx:merchant-gwt-ui:1.2.2 @ /opt/teamcity/work/eca6f4a6c7dc0942/merchant-gwt-ui/pom.xml skipped by property 'sonar.skip'
+[01:02:07][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:08][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:08][Step 5/5] [INFO] artifact org.jxls:jxls: checking for updates from global-repo
+[01:02:08][Step 5/5] [INFO] Module MavenProject: co.uk.psipay.ecx:public-api-test:1.2.2 @ /opt/teamcity/work/eca6f4a6c7dc0942/public-api-test/pom.xml skipped by property 'sonar.skip'
+[01:02:08][Step 5/5] [INFO] Module MavenProject: co.uk.psipay.ecx:selenium-test:1.2.2 @ /opt/teamcity/work/eca6f4a6c7dc0942/selenium-test/pom.xml skipped by property 'sonar.skip'
+[01:02:08][Step 5/5] [INFO] Default locale: "en_US", source code encoding: "UTF-8"
+[01:02:08][Step 5/5] [INFO] Process project properties
+[01:02:08][Step 5/5] [INFO] Load project repositories
+[01:02:13][Step 5/5] [INFO] Load project repositories (done) | time=4763ms
+[01:02:13][Step 5/5] [INFO] Execute project builders
+[01:02:13][Step 5/5] [INFO] Execute project builders (done) | time=0ms
+[01:02:13][Step 5/5] [INFO] Load quality profiles
+[01:02:13][Step 5/5] [INFO] Load quality profiles (done) | time=30ms
+[01:02:13][Step 5/5] [INFO] Load active rules
+[01:02:14][Step 5/5] [INFO] Load active rules (done) | time=706ms
+[01:02:14][Step 5/5] [INFO] Publish mode
+[01:02:14][Step 5/5] [INFO] -------------  Scan common-gwt-shared
+[01:02:14][Step 5/5] [INFO] Load server rules
+[01:02:14][Step 5/5] [INFO] Load server rules (done) | time=221ms
+[01:02:15][Step 5/5] [INFO] Base dir: /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared
+[01:02:15][Step 5/5] [INFO] Working dir: /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/sonar
+[01:02:15][Step 5/5] [INFO] Source paths: pom.xml, src/main/java
+[01:02:15][Step 5/5] [INFO] Source encoding: UTF-8, default locale: en_US
+[01:02:15][Step 5/5] [INFO] Index files
+[01:02:15][Step 5/5] [INFO] Excluded sources: 
+[01:02:15][Step 5/5] [INFO]   com/swissre/tmr/integration/sicsnt/generated/**
+[01:02:15][Step 5/5] [INFO] 33 files indexed
+[01:02:15][Step 5/5] [INFO] 0 files ignored because of inclusion/exclusion patterns
+[01:02:15][Step 5/5] [INFO] Quality profile for java: PSIPay profile
+[01:02:16][Step 5/5] [INFO] Sensor Lines Sensor
+[01:02:16][Step 5/5] [INFO] Sensor Lines Sensor (done) | time=28ms
+[01:02:16][Step 5/5] [INFO] Sensor JavaSquidSensor
+[01:02:16][Step 5/5] [INFO] Configured Java source version (sonar.java.source): 8
+[01:02:16][Step 5/5] [INFO] JavaClasspath initialization
+[01:02:16][Step 5/5] [INFO] JavaClasspath initialization (done) | time=14ms
+[01:02:16][Step 5/5] [INFO] JavaTestClasspath initialization
+[01:02:16][Step 5/5] [INFO] JavaTestClasspath initialization (done) | time=0ms
+[01:02:17][Step 5/5] [INFO] Java Main Files AST scan
+[01:02:17][Step 5/5] [INFO] 33 source files to be analyzed
+[01:02:18][Step 5/5] [INFO] Java Main Files AST scan (done) | time=1646ms
+[01:02:18][Step 5/5] [INFO] Java Test Files AST scan
+[01:02:18][Step 5/5] [INFO] 0 source files to be analyzed
+[01:02:18][Step 5/5] [INFO] Java Test Files AST scan (done) | time=4ms
+[01:02:18][Step 5/5] [INFO] Sensor JavaSquidSensor (done) | time=2624ms
+[01:02:18][Step 5/5] [INFO] Sensor CoberturaSensor
+[01:02:18][Step 5/5] [WARNING] Cobertura report not found at /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/site/cobertura/coverage.xml
+[01:02:18][Step 5/5] [INFO] Sensor CoberturaSensor (done) | time=0ms
+[01:02:18][Step 5/5] [INFO] Sensor lv.ctco.sonar.plugin.sqlanalyzer.application.sensor.SqlAnalyzerSensor
+[01:02:18][Step 5/5] [INFO] SQL report analysis started.
+[01:02:18][Step 5/5] [INFO] SQL report analysis finished.
+[01:02:18][Step 5/5] [INFO] Sensor lv.ctco.sonar.plugin.sqlanalyzer.application.sensor.SqlAnalyzerSensor (done) | time=2ms
+[01:02:18][Step 5/5] [INFO] Sensor PmdSensor
+[01:02:18][Step 5/5] [INFO] Execute PMD 5.4.2...
+[01:02:18][Step 5/5] [INFO] 33/33 source files have been analyzed
+[01:02:18][Step 5/5] [INFO] 0/0 source files have been analyzed
+[01:02:18][Step 5/5] [INFO] Java version: 1.8
+[01:02:18][Step 5/5] [INFO] PMD configuration: /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/sonar/pmd.xml
+[01:02:20][Step 5/5] [INFO] Execute PMD 5.4.2 done: 1352 ms
+[01:02:20][Step 5/5] [INFO] Sensor PmdSensor (done) | time=1356ms
+[01:02:20][Step 5/5] [INFO] Sensor lv.ctco.sonar.plugin.projectgroups.batch.ProjectGroupsSensor
+[01:02:20][Step 5/5] [INFO] JSON: [{"projects":[{"name":"EDMS LHS","id":"57383"},{"name":"LHTCMS SR TMR","id":"143942"},{"name":"MPS","id":"54298"},{"name":"QIMT","id":"134700"},{"name":"SR CLW","id":"44719"},{"name":"SR LHACCWF","id":"138291"},{"name":"SR LSI MASTER","id":"55562"},{"name":"SR MGR","id":"309716"},{"name":"SRLHLGC","id":"66540"},{"name":"SRLHLIPO","id":"49536"},{"name":"SRLHWBENCH","id":"173300"}],"name":"Life & Health","id":"1"}]
+[01:02:20][Step 5/5] [INFO] Sensor lv.ctco.sonar.plugin.projectgroups.batch.ProjectGroupsSensor (done) | time=45ms
+[01:02:20][Step 5/5] [INFO] Sensor CheckstyleSensor
+[01:02:20][Step 5/5] [INFO] Execute Checkstyle 7.3...
+[01:02:20][Step 5/5] [INFO] Checkstyle configuration: /opt/teamcity/work/eca6f4a6c7dc0942/common-gwt-shared/target/sonar/checkstyle.xml
+[01:02:20][Step 5/5] [INFO] Checkstyle charset: UTF-8
+[01:02:20][Step 5/5] [INFO] Execute Checkstyle 7.3 done: 507 ms
+[01:02:20][Step 5/5] [INFO] Sensor CheckstyleSensor (done) | time=513ms
+[01:02:20][Step 5/5] [INFO] Sensor SCM Sensor
+[01:02:20][Step 5/5] [INFO] SCM provider for this project is: git
+[01:02:20][Step 5/5] [INFO] 5 files to be analyzed
+[01:02:22][Step 5/5] [INFO] 5/5 files analyzed
+[01:02:22][Step 5/5] [INFO] Sensor SCM Sensor (done) | time=1438ms
+[01:02:22][Step 5/5] [INFO] Sensor FindBugs Sensor
+[01:02:23][Step 5/5] [WARNING] Findbugs needs sources to be compiled. Please build project before executing sonar or check the location of compiled classes to make it possible for Findbugs to analyse your project.
+[01:02:23][Step 5/5] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.0.2:sonar (default-cli) on project ecx-root: Can not execute Findbugs
+[01:02:48][Step 5/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-root:pom:1.2.2']
+[01:02:23][Step 5/5] [INFO] ------------------------------------------------------------------------
+[01:02:23][Step 5/5] [INFO] Reactor Summary:
+[01:02:23][Step 5/5] [INFO] 
+[01:02:23][Step 5/5] [INFO] ecx-root ........................................... FAILURE [01:12 min]
+[01:02:23][Step 5/5] [INFO] common-gwt-shared .................................. SKIPPED
+[01:02:23][Step 5/5] [INFO] ecx-domain-common .................................. SKIPPED
+[01:02:23][Step 5/5] [INFO] common ............................................. SKIPPED
+[01:02:23][Step 5/5] [INFO] ecx-domain ......................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] common-gwt-ui ...................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] ecx-domain-repository .............................. SKIPPED
+[01:02:23][Step 5/5] [INFO] ecx-mail-service ................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] ecx-domain-service ................................. SKIPPED
+[01:02:23][Step 5/5] [INFO] distributor-ui-api-model ........................... SKIPPED
+[01:02:23][Step 5/5] [INFO] ecovoucher-internal-api-model ...................... SKIPPED
+[01:02:23][Step 5/5] [INFO] common-internal-client ............................. SKIPPED
+[01:02:23][Step 5/5] [INFO] ecovoucher-internal-client ......................... SKIPPED
+[01:02:23][Step 5/5] [INFO] purchase-internal-api-model ........................ SKIPPED
+[01:02:23][Step 5/5] [INFO] purchase-internal-client ........................... SKIPPED
+[01:02:23][Step 5/5] [INFO] distributor-gwt-ui ................................. SKIPPED
+[01:02:23][Step 5/5] [INFO] purchase-limit-service ............................. SKIPPED
+[01:02:23][Step 5/5] [INFO] distributor-app .................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] ecovoucher-app ..................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] management-ui-api-model ............................ SKIPPED
+[01:02:23][Step 5/5] [INFO] geo-api-service .................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] risk-management-service ............................ SKIPPED
+[01:02:23][Step 5/5] [INFO] management-gwt-ui .................................. SKIPPED
+[01:02:23][Step 5/5] [INFO] management-app ..................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] merchant-ui-api-model .............................. SKIPPED
+[01:02:23][Step 5/5] [INFO] merchant-gwt-ui .................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] merchant-app ....................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] jwt-util ........................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] sms-gw ............................................. SKIPPED
+[01:02:23][Step 5/5] [INFO] client-app ......................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] public-api-test .................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] selenium-test ...................................... SKIPPED
+[01:02:23][Step 5/5] [INFO] ------------------------------------------------------------------------
+[01:02:23][Step 5/5] [INFO] BUILD FAILURE
+[01:02:23][Step 5/5] [INFO] ------------------------------------------------------------------------
+[01:02:23][Step 5/5] [INFO] Total time: 01:13 min
+[01:02:23][Step 5/5] [INFO] Finished at: 2018-09-12T01:02:48+03:00
+[01:02:23][Step 5/5] [INFO] Final Memory: 79M/314M
+[01:02:23][Step 5/5] [INFO] ------------------------------------------------------------------------
+[01:02:23][Step 5/5] [WARNING] The requested profile "ctco" could not be activated because it does not exist.
+[01:02:23][Step 5/5] [ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.0.2:sonar (default-cli) on project ecx-root: Can not execute Findbugs: This project contains Java source files that are not compiled. -> [Help 1]
+[01:02:23][Step 5/5] [ERROR] 
+[01:02:23][Step 5/5] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[01:02:23][Step 5/5] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[01:02:23][Step 5/5] [ERROR] 
+[01:02:23][Step 5/5] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+[01:02:23][Step 5/5] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[01:02:23][Step 5/5] Process exited with code 1
+[01:02:23][Step 5/5] Publishing artifacts
+[01:02:23][Publishing artifacts] Collecting files to publish: [/opt/teamcity/temp/buildTmp/.tc-maven-bi/maven-build-info.1.xml.gz => .teamcity]
+[01:02:23][Publishing artifacts] Publishing 1 file using [ArtifactsCachePublisher]: /opt/teamcity/temp/buildTmp/.tc-maven-bi/maven-build-info.1.xml.gz => .teamcity
+[01:02:23][Publishing artifacts] Publishing 1 file using [WebPublisher]: /opt/teamcity/temp/buildTmp/.tc-maven-bi/maven-build-info.1.xml.gz => .teamcity
+[01:01:58][Step 5/5] Process exited with code 1
+[01:02:23][Step 5/5] Waiting for 2 service processes to complete
+[01:02:24][Step 5/5] Step Run Sonar (Maven) failed
+[01:02:24]Stopping performance monitoring process
+[01:02:24]Performance monitoring process stopped
+[01:02:24]Publishing performance monitoring build stages data
+[01:02:24]Publishing artifacts
+[01:02:24][Publishing artifacts] Collecting files to publish: [/opt/teamcity/system/perfmon/temp/perfmon.csv=>.teamcity/perfmon/, /opt/teamcity/temp/agentTmp/build_stages.txt=>.teamcity/perfmon/]
+[01:02:24][Publishing artifacts] Publishing 2 files using [ArtifactsCachePublisher]: /opt/teamcity/system/perfmon/temp/perfmon.csv, /opt/teamcity/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[01:02:24][Publishing artifacts] Publishing 2 files using [WebPublisher]: /opt/teamcity/system/perfmon/temp/perfmon.csv, /opt/teamcity/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[01:02:24]Publishing internal artifacts
+[01:02:24][Publishing internal artifacts] Publishing 1 file using [ArtifactsCachePublisher]
+[01:02:24][Publishing internal artifacts] Publishing 1 file using [WebPublisher]
+[01:02:24]Publishing artifacts
+[01:02:24][Publishing artifacts] Collecting files to publish: [report.pdf]
+[01:02:24][Publishing artifacts] Artifacts path 'report.pdf' not found
+[01:02:24]Build finished
+ Help  Feedback
+TeamCity Enterprise 2017.2.3 (build 51047)
+ New version is available!
+License agreement

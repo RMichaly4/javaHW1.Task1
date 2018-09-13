@@ -258,7 +258,9 @@ Valid property list format is (name( )*=( )*'escaped_value'( )*)* where escape s
 [01:01:07][Step 1/5] [INFO] 
 [01:01:07][Step 1/5] [INFO] --- ctco-scm-maven-plugin:1.0.0.0.55:modulesInfo (default-cli) @ ecx-domain-common ---
 [01:01:33][Step 1/5] ##teamcity[projectFinished tc:tags='tc:internal' projectId='co.uk.psipay.ecx:ecx-domain-common:jar:1.2.2']
-[01:01:07][Step 1/5] [INFO]                                                                         
+[01:01:07][Step 1/5] [INFO]     
+[01:01:07][trololo] some error here
+[36534654747] eRRoR                                                                         
 [01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------
 [01:01:07][Step 1/5] [INFO] Building common 1.2.2
 [01:01:07][Step 1/5] [INFO] ------------------------------------------------------------------------

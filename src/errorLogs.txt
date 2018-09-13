@@ -1,0 +1,13 @@
+Str. 201: [01:01:07][Step 1/5] 2018-09-12 01:01:33,299 [ERROR|TeamCityUtils] 
+Str. 202: [01:01:33][Step 1/5] ##teamcity[message text='Version doesn't contains '-SNAPSHOT'' status='ERROR']
+Str. 206: [01:01:07][Step 1/5] 2018-09-12 01:01:33,299 [ERROR|TeamCityUtils] 
+Str. 262: [01:01:07][trololo] some error here
+Str. 263: [36534654747] eRRoR                                                                         
+Str. 879: [01:01:08][Step 2/5] /opt/teamcity/temp/agentTmp/custom_script3113530027990552975: line 5: syntax error near unexpected token `newline'
+Str. 1595: [01:02:23][Step 5/5] [ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.0.2:sonar (default-cli) on project ecx-root: Can not execute Findbugs: This project contains Java source files that are not compiled. -> [Help 1]
+Str. 1596: [01:02:23][Step 5/5] [ERROR] 
+Str. 1597: [01:02:23][Step 5/5] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+Str. 1598: [01:02:23][Step 5/5] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+Str. 1599: [01:02:23][Step 5/5] [ERROR] 
+Str. 1600: [01:02:23][Step 5/5] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+Str. 1601: [01:02:23][Step 5/5] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

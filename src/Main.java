@@ -6,7 +6,7 @@ public class Main {
     static String FILE = "C:\\=DATA\\#WORK\\IDEA projects\\javaHW1.Task1.v02\\src\\Logs.txt";
 
     // specify string to find below
-    static String STRING_TO_FIND = "ERROR";
+    static String STRING_TO_FIND = "ErRoR";
 
 
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Main {
                 //System.out.println(strLine);
                 lineNum++;
 
-                if(strLine.indexOf(STRING_TO_FIND) > -1) {
+                if(strLine.toUpperCase().contains(STRING_TO_FIND.toUpperCase())) {
                     if (matchCount == 0) {System.out.println("'"+ STRING_TO_FIND + " was found on line(s)"+ "\n");
                     }
                     String textToWrite = "Str. " + lineNum +": " + strLine + "\n";
